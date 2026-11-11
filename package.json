@@ -1,0 +1,43 @@
+{
+  "name": "deadshot-io-client",
+  "version": "1.0.0",
+  "description": "Unofficial Linux desktop wrapper for Deadshot.io, built with Electron.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "electron --ozone-platform=x11 .",
+    "dist:linux": "electron-builder --linux AppImage deb",
+    "start:wayland": "electron --ozone-platform=wayland ."
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "io.deadshot.client",
+    "productName": "Deadshot.io Client",
+    "linux": {
+      "category": "Game",
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "maintainer": "Deadshot.io Client <noreply@example.invalid>",
+      "icon": "assets/icons",
+      "syncDesktopName": true
+    },
+    "files": [
+      "index.js",
+      "preload.js",
+      "package.json",
+      "assets/icons/**/*"
+    ],
+    "afterPack": "./scripts/force-x11-launcher.js"
+  },
+  "author": {
+    "name": "Deadshot.io Client",
+    "email": "noreply@example.invalid"
+  },
+  "homepage": "https://deadshot.io/",
+  "desktopName": "io.deadshot.client.desktop"
+}

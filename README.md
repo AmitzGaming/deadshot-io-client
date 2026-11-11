@@ -21,8 +21,8 @@ An internet connection is required because the game itself is served by Deadshot
 Download the AppImage from the repository's Releases page, then run:
 
 ```sh
-chmod +x "Deadshot.io Client-1.0.0.AppImage"
-./"Deadshot.io Client-1.0.0.AppImage"
+chmod +x Deadshot.io.Client-1.0.0.AppImage
+./Deadshot.io.Client-1.0.0.AppImage
 ```
 
 ### Debian or Ubuntu

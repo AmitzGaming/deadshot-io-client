@@ -58,15 +58,13 @@ The AppImage and Debian package are written to `dist/`. Building may download El
 
 ## Repository details
 
-Suggested GitHub description:
+GitHub description: Unofficial Linux desktop wrapper for Deadshot.io, built with Electron.
 
-> Unofficial Linux desktop wrapper for Deadshot.io, built with Electron.
-
-Suggested topics: `deadshot-io`, `electron`, `linux`, `desktop-client`, `appimage`.
+Topics: `deadshot-io`, `electron`, `linux`, `desktop-client`, `appimage`.
 
 ## License
 
-No license has been selected for this project yet. Add a license before inviting reuse or publishing it as open source. The Deadshot.io game and its branding remain the property of their respective owners.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE). The Deadshot.io game and its branding remain the property of their respective owners.
 
 ## Release checklist
 
